@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:viewpagertabs="http://schemas.android.com/apk/res/com.astuetz.viewpagertabs"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" android:background="@drawable/background">
+
+    <com.astuetz.viewpagertabs.ViewPagerTabs
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/colorline"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF91A438"
+        android:layout_below="@+id/tabs" />
+
+    <View
+        android:id="@+id/blackline"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#FF000000"
+        android:layout_below="@+id/colorline" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:layout_below="@+id/blackline" />
+
+    <Button
+        android:id="@+id/style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="change style!"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
