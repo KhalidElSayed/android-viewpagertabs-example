@@ -3,6 +3,8 @@ ViewPagerTabs - Example
 
 Example for using the [android-viewpagertabs library][1]
 
+You can also directly [download the apk][2]
+
 
 
 Developed By
@@ -35,3 +37,4 @@ License
 
 
  [1]: https://github.com/astuetz/android-viewpagertabs
+ [2]: https://github.com/downloads/astuetz/android-viewpagertabs-example/android-viewpagertabs-example.apk
