@@ -4,7 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:viewpagertabs="http://schemas.android.com/apk/res/com.astuetz.viewpagertabs"
     android:layout_height="fill_parent"
-    android:layout_width="fill_parent" android:background="@drawable/background">
+    android:layout_width="fill_parent"
+    android:background="@drawable/background">
 
     <com.astuetz.viewpagertabs.ViewPagerTabs
         android:id="@+id/tabs"
@@ -29,7 +30,6 @@
         android:id="@+id/pager"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        
         android:layout_below="@+id/blackline" />
 
     <Button
