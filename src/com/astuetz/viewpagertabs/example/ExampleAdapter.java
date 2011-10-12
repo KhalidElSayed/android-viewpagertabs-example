@@ -29,8 +29,14 @@ public class ExampleAdapter extends PagerAdapter implements ViewPagerTabProvider
 	    "top kostenlos - neu",
 	    "trends" };
 	
+	private String[] mTitlesNew = {
+	    "this",
+	    "is",
+	    "really",
+	    "awesome" };
 	
-	public boolean upperCase = true;
+	
+	private boolean mUseNewData = false;
 	
 	public ExampleAdapter(Activity context) {
 		mContext = context;
@@ -42,6 +48,9 @@ public class ExampleAdapter extends PagerAdapter implements ViewPagerTabProvider
 		return mData.length;
 	}
 	
+	public void changeData() {
+		mUseNewData = true;
+	}
 	
 	@Override
 	public Object instantiateItem(View container, int position) {
@@ -94,10 +103,14 @@ public class ExampleAdapter extends PagerAdapter implements ViewPagerTabProvider
 	
 	@Override
 	public String getTitle(int position) {
-		if (position >= 0 && position < mTitles.length)
-			return upperCase ? mTitles[position].toUpperCase() : mTitles[position];
+		
+		final int len = mUseNewData ? mTitlesNew.length : mTitles.length;
+		
+		if (position >= 0 && position < len)
+			return mUseNewData ? mTitlesNew[position] : mTitles[position].toUpperCase();
 		else
 			return "";
+		
 	}
 	
 	

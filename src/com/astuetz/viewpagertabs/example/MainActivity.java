@@ -37,14 +37,16 @@ public class MainActivity extends Activity {
 				mTabs.setBackgroundColorPressed(0x33333333);
 				mTabs.setTextColor(0x44A80000);
 				mTabs.setTextColorCenter(0xFFA80000);
-				mTabs.setLineColor(0xFFA80000);
+				mTabs.setLineColorCenter(0xFFA80000);
 				mTabs.setLineHeight(5);
 				mTabs.setTextSize(22);
 				mTabs.setTabPadding(5, 1, 5, 10);
 				mTabs.setOutsideOffset(200);
 				
-				mAdapter.upperCase = false;
-				mTabs.refreshTitles();
+				//mTabs.refreshTitles();
+				
+				mAdapter.changeData();
+				mTabs.notifyDatasetChanged();
 				
 				findViewById(R.id.colorline).setBackgroundColor(0xFFA80000);
 				

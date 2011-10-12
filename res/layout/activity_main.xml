@@ -10,7 +10,8 @@
     <com.astuetz.viewpagertabs.ViewPagerTabs
         android:id="@+id/tabs"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" 
+        android:background="#FF3B3B3B" />
 
     <View
         android:id="@+id/colorline"
